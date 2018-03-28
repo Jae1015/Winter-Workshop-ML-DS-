@@ -1,0 +1,33 @@
+data <- read.csv("@SrBachchan.csv")
+print(data)
+result=mean(data$length)
+print(result)
+print(mean(data$no_hashtags))
+print(mean(data$no_men))
+print(mean(data$likes))
+print(mean(data$retweets))
+print(mean(data$sentiment_polarity))
+print(mean(data$time))
+print("Median")
+
+print(median(data$length))
+print(median(data$no_hashtags))
+print(median(data$no_men))
+print(median(data$likes))
+print(median(data$retweets))
+print(median(data$sentiment_polarity))
+print(median(data$time))
+
+print("Mode")
+getmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+result=getmode(data$length)
+print(result)
+print(getmode(data$no_hashtags))
+print(getmode(data$no_men))
+print(getmode(data$likes))
+print(getmode(data$retweets))
+print(getmode(data$sentiment_polarity))
+print(getmode(data$time))

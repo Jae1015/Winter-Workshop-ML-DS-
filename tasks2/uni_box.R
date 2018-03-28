@@ -1,0 +1,5 @@
+data <- read.csv("@SrBachchan.csv")
+boxplot(data$no_hashtags)
+boxplot(data$no_men)
+boxplot(data$likes)
+boxplot(data$retweets)
